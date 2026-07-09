@@ -5,15 +5,15 @@ export interface IMessage extends Document {
     sender: mongoose.Types.ObjectId;
     text: string;
     createdAt: Date;
-    updatedAT: Date;
+    updatedAt: Date;
 }
 
 const MessageSchema = new Schema<IMessage>(
     {
         chat: {
             type: Schema.Types.ObjectId, 
-            ref: "Message",
-            require: true,
+            ref: "Chat",
+            required: true,
         },
         sender: {
             type: Schema.Types.ObjectId,
