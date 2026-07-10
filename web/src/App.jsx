@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <header>
-        <Show when="signed-out">
+        <Show when="signed-out" treatPendingAsSignedOut={false}>
           <SignInButton mode='modal' />
           <SignUpButton mode='modal' />
         </Show>

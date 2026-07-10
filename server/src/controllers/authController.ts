@@ -17,8 +17,7 @@ export const getMe = async (req: AuthRequest, res: Response, next:NextFunction) 
 
     } catch (error) {
         // res.status(500).json({ message: "Internal Server Error" }) // It was without errorhandler
-        res.status(500);
-        next();              // this is using error handler
+        next(error);              // this is using error handler
     }
 
 }
@@ -47,7 +46,6 @@ export const authCallback = async (req: Request, res: Response, next:NextFunctio
 
         res.json(user)
     } catch (error) {
-        return res.status(500);
-        next();
+        next(error); // errorHandler will manage the rest
     }
 }

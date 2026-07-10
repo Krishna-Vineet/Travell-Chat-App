@@ -8,9 +8,9 @@ import { clerkMiddleware } from '@clerk/express'
 import { errorHandler } from "./middleware/errorHandler.ts";
 
 const app = express();
+app.use(clerkMiddleware())
 app.use(express.json());
 app.use(helmet());
-app.use(clerkMiddleware())
 
 
 
