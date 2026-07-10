@@ -5,7 +5,7 @@
     "": {
       "name": "server",
       "dependencies": {
-        "@clerk/express": "^2.1.38",
+        "@clerk/express": "^2.1.39",
         "@types/express": "^5.0.6",
         "@types/node": "^26.1.1",
         "cors": "^2.8.6",
@@ -25,11 +25,11 @@
     },
   },
   "packages": {
-    "@clerk/backend": ["@clerk/backend@3.11.2", "", { "dependencies": { "@clerk/shared": "^4.25.1", "standardwebhooks": "^1.0.0", "tslib": "2.8.1" } }, "sha512-HaHAnKzThRpdRi+QJkMo3+Cx/3hJUt+UdbQ62Ikzwwt0zIhUE0+qgG+zgUHjAdYhSbfiUzEWYsLdnBsfQ7yv7g=="],
+    "@clerk/backend": ["@clerk/backend@3.11.3", "", { "dependencies": { "@clerk/shared": "^4.25.2", "standardwebhooks": "^1.0.0", "tslib": "2.8.1" } }, "sha512-takrEE0nliUz39e8Ct1YG471eBcuU2I1ZStRIU9U0UAIuiNAxNTNuaVZSXaZeK4QTuJtdQhoGy8rvzxr/10Btw=="],
 
-    "@clerk/express": ["@clerk/express@2.1.38", "", { "dependencies": { "@clerk/backend": "^3.11.2", "@clerk/shared": "^4.25.1", "tslib": "2.8.1" }, "peerDependencies": { "express": "^4.17.0 || ^5.0.0" } }, "sha512-mUaftcW+cTgJfHTkuQPwp7SdCs+vB2A8w9LdTYnKVZkc+nw407pcJXMIQ33J5czBFsk6ICjl/X8TM25/cyDQMg=="],
+    "@clerk/express": ["@clerk/express@2.1.39", "", { "dependencies": { "@clerk/backend": "^3.11.3", "@clerk/shared": "^4.25.2", "tslib": "2.8.1" }, "peerDependencies": { "express": "^4.17.0 || ^5.0.0" } }, "sha512-TOzL0rgdoQ13BH0ASJXrb+6yyICKOL1mk1nflOJu77jLQ79v/U38Vqk9ExB9HtGsh5CuGwdvNB0Et0hrQ+b3xg=="],
 
-    "@clerk/shared": ["@clerk/shared@4.25.1", "", { "dependencies": { "@tanstack/query-core": "^5.100.6", "dequal": "2.0.3", "glob-to-regexp": "0.4.1", "js-cookie": "3.0.7" }, "peerDependencies": { "react": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0", "react-dom": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0" }, "optionalPeers": ["react", "react-dom"] }, "sha512-+FHoFEJ8zGenUymf03gARKEAYOLxOKm6B437tgukxP7oM5ORfI+ZND62W25S8ddVsDLlNTS0VEHlhDm3F+NF0A=="],
+    "@clerk/shared": ["@clerk/shared@4.25.2", "", { "dependencies": { "@tanstack/query-core": "^5.100.6", "dequal": "2.0.3", "glob-to-regexp": "0.4.1", "js-cookie": "3.0.7" }, "peerDependencies": { "react": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0", "react-dom": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0" }, "optionalPeers": ["react", "react-dom"] }, "sha512-v7zgDh0eVLl3KzRHbKYTsPQ+4Xcx8A2oiU5iZ9WhME024WudwkjjPJRK12RycY0VA1Sj8i4Pi5zEpecqB/gp1Q=="],
 
     "@mongodb-js/saslprep": ["@mongodb-js/saslprep@1.4.12", "", { "dependencies": { "sparse-bitfield": "^3.0.3" } }, "sha512-QAfAMwNgnYxZ2C6D1HgeP7Gc4i/uvJRim415PCIL9ptRxWMNbWeLBYb2/9R4pGKny/s1FVu2JA2cxCUBUOggrA=="],
 
