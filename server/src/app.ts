@@ -4,10 +4,13 @@ import authRoutes from './routes/authRoutes.ts'
 import chatRoutes from './routes/chatRoutes.ts'
 import messageRoutes from './routes/messageRoutes.ts'
 import userRoutes from './routes/userRoutes.ts'
+import { clerkMiddleware } from '@clerk/express'
+import { errorHandler } from "./middleware/errorHandler.ts";
 
 const app = express();
 app.use(express.json());
 app.use(helmet());
+app.use(clerkMiddleware())
 
 
 
@@ -21,6 +24,6 @@ app.use('/api/chats', chatRoutes)
 app.use('/api/messages', messageRoutes)
 app.use('/api/users', userRoutes)
 
-const PORT = process.env.PORT || 3000;
+app.use(errorHandler);
 
 export default app;
